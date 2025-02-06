@@ -1,10 +1,13 @@
 import "./App.css";
 import Heading from "./components/Heading";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <>
-    <Heading>TEXT</Heading>
+      <Layout>
+        <Heading>My App</Heading>
+      </Layout>
     </>
   );
 }
