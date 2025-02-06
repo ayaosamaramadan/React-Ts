@@ -1,12 +1,10 @@
 import "./App.css";
-
-import Status from "./components/status.tsx";
+import Heading from "./components/Heading";
 
 function App() {
   return (
     <>
-    {/* only accept the spesific strings*/}
-      <Status status="success"/>
+    <Heading>TEXT</Heading>
     </>
   );
 }
