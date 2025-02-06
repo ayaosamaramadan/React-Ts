@@ -1,7 +1,7 @@
 type btnProps = {
-    handleclick: () => void;
+    handleclick: (event:React.MouseEvent<HTMLButtonElement>) => void;
     };
-    
+
 function Button({handleclick}:btnProps) {
   return <button onClick={handleclick}>click</button>;
 }

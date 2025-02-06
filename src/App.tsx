@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <SayHello name="Aya"/>
-    <Button handleclick={()=>console.log("hello")}/>
+    <Button handleclick={(e)=>console.log(e.target)}/>
     </>
   );
 }
