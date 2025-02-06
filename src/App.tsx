@@ -1,26 +1,12 @@
 import "./App.css";
-import SayHello from "./components/SayHello.tsx";
+
+import Status from "./components/status.tsx";
 
 function App() {
-// array of objects
-  const arrData = [
-    {
-      name: "Aya",
-      age: 21,
-      loggedIn: false,
-    },
-    {
-      name: "Alaa",
-      age: 25,
-      loggedIn: true,
-    },
-  ];
   return (
     <>
-        {/* pass arrData as prop to comp */}
-      <SayHello
-       arrData={arrData}
-      />
+    {/* only accept the spesific strings*/}
+      <Status status="success"/>
     </>
   );
 }
