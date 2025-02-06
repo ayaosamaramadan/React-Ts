@@ -1,10 +1,11 @@
 
 import './App.css'
+import SayHello from './components/sayHello'
 
 function App() {
   return (
     <>
-     <p class='text-red-500'>aya</p>
+     <SayHello name="Aya"/>
     </>
   )
 }
