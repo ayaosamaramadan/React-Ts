@@ -2,20 +2,24 @@ import "./App.css";
 import SayHello from "./components/SayHello.tsx";
 
 function App() {
-  // define object data
-  const objData = {
-    name: "Aya",
-    age: 21,
-    loggedIn: true,
-  };
+// array of objects
+  const arrData = [
+    {
+      name: "Aya",
+      age: 21,
+      loggedIn: false,
+    },
+    {
+      name: "Alaa",
+      age: 25,
+      loggedIn: true,
+    },
+  ];
   return (
     <>
-      {/* pass obj as prop */}
-      {/* <SayHello objData={objData}/> */}
+        {/* pass arrData as prop to comp */}
       <SayHello
-        name={objData.name}
-        age={objData.age}
-        loggedIn={objData.loggedIn}
+       arrData={arrData}
       />
     </>
   );
