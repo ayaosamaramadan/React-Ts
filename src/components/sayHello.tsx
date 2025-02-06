@@ -1,22 +1,16 @@
-type obj = {
-  arrData: {
-    name: string;
-    age: number;
-    loggedIn: boolean;
-  }[];
+type arrType = {
+  name: string;
+  // optional type
+  age?: number;
+  loggedIn?: boolean;
 };
 // destructure arrData
-function SayHello({ arrData }: obj) {
+function SayHello(props: arrType) {
   return (
     <>
       <div>
-        
-        {arrData.map((arr, index) => (
-          <div key={index}>
-            <h1>Hello {arr.loggedIn ? arr.name : "Guest"}</h1>
-            <p>{arr.age}</p>
-          </div>
-        ))}
+        <h2>
+          Hello {props.name}!</h2>
       </div>
     </>
   );

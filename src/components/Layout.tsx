@@ -5,6 +5,7 @@ type lay = {
 
 function Layout(props: lay) {
   return (
+    
     <div>
     {props.children}    
     </div>

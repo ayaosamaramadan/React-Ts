@@ -1,13 +1,10 @@
 import "./App.css";
-import Heading from "./components/Heading";
-import Layout from "./components/Layout";
+import SayHello from "./components/SayHello";
 
 function App() {
   return (
     <>
-      <Layout>
-        <Heading>My App</Heading>
-      </Layout>
+    <SayHello name="Aya"/>
     </>
   );
 }
