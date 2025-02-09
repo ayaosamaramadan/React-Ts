@@ -6,8 +6,10 @@ type userProp = {
 }
 
 function User() {
-    // const [user, setUser] = useState<null | {name:string; email:string}>(null);
-    const [user, setUser] = useState<null |userProp>(null);
+ // const [user, setUser] = useState<null | {name:string; email:string}>(null);
+    // const [user, setUser] = useState<null |userProp>(null);// to null or object of userProp type 
+    const [user, setUser] = useState<userProp>({} as userProp);// to {} or object of userProp type
+
   return (
     <>
     <div>
@@ -16,7 +18,7 @@ function User() {
         <button  onClick={()=>setUser({name:"aya" ,email:"ayaramadan2011@gmail.com"})} className="bg-amber-700 ml-5">
             Login
         </button>
-        <button onClick={()=>setUser(null)} className="bg-amber-700 ml-5">
+        <button onClick={()=>setUser({} as userProp)} className="bg-amber-700 ml-5">
             Logout  
         </button>
 
