@@ -6,3 +6,4 @@ body {
 input[type="text"] {
   @apply border border-gray-300 rounded-lg p-2;
 }
+
