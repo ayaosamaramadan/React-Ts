@@ -17,7 +17,7 @@ import { prodecutData } from "../types/app";
 // ];
 
 type productProp = {
-     data : prodecutData[];
+     data: prodecutData["data"];
 }
 function Products(props:productProp) {
     return (
