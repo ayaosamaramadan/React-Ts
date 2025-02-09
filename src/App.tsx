@@ -5,7 +5,7 @@ import Input from "./components/Input";
 import Container from "./components/Container";
 import Products from "./components/Products";
 import Login from "./components/Login";
-
+import Counter from "./components/Counter";
 
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
 ];
   return (
     <>
+    <Counter/>
     <Login />
     <Container styles={{color:"red"}} />
       <SayHello name="Aya" />

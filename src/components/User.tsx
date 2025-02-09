@@ -18,7 +18,7 @@ function User() {
         <button  onClick={()=>setUser({name:"aya" ,email:"ayaramadan2011@gmail.com"})} className="bg-amber-700 ml-5">
             Login
         </button>
-        <button onClick={()=>setUser({} as userProp)} className="bg-amber-700 ml-5">
+        <button onClick={()=>setUser({} as userProp )} className="bg-amber-700 ml-5">
             Logout  
         </button>
 
